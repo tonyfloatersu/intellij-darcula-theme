@@ -26,7 +26,7 @@
  '(lazy-highlight ((t (:background "#32593d" :box (:line-width -1 :color "#3c704b")))))
  ;; tooltip colors doesn't work on OSX
  '(tooltip ((t (:inherit (variable-pitch) :foreground "#bbbbbb" :background "#5c5c42"))))
- '(mode-line ((t (:box (:line-width -1 :color "#464646") :weight bold :foreground "#bbbbbb" :background "#3c3f41")))) ;; the color change from #464646 to #222222
+ '(mode-line ((t (:box (:line-width -1 :color "#464646") :weight bold :foreground "#bbbbbb" :background "#3c3f41"))))
  '(mode-line-inactive ((t (:style released-button :inherit (mode-line) :weight normal))))
  ;; '(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
  ;; IDEA supports something like hl-mode
@@ -36,25 +36,25 @@
  '(ecb-default-general-face ((t (:foreground "white"))))
  ;; coding customizations
  '(font-lock-comment-face ((t (:foreground "#808080"))))
- '(font-lock-comment-delimiter-face ((t (:foreground "#808079"))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "#808080"))))
  '(font-lock-doc-face ((t (:foreground "#629755" :italic t))))
  '(font-lock-keyword-face ((t (:foreground "#CC7832" :bold t))))
  '(font-lock-preprocessor-face ((t (:foreground "#BBB529"))))
- '(font-lock-string-face ((t (:foreground "#6A8759")))) ;; #008080 origin #6A8759
+ '(font-lock-string-face ((t (:foreground "#6A8759"))))
  '(font-latex-string-face ((t (:foreground "#6A8759"))))
  '(font-latex-math-face ((t (:foreground "aquamarine1"))))
  '(font-lock-type-face ((t (:foreground "#CC7832" :bold t))))
- '(font-lock-builtin-face ((t (:foreground "#8887C6")))) ;; #8888C6 ORIGIN #CC7832
+ '(font-lock-builtin-face ((t (:foreground "#8887C6"))))
  '(font-lock-function-name-face ((t (:foreground "#FFC66D"))))
  ;; (font-lock-function-name-face ((t (:foreground "selectedControlColor"))))
  ;; (font-lock-variable-name-face ((t (:foreground "green"))))
  ;; (font-lock-negation-char-face ((t (:foreground "white"))))
  '(font-lock-number-face ((t (:foreground "#6897BB"))))
- '(font-lock-constant-face ((t (:foreground "#6897BB" :italic nil))))
- '(font-lock-warning-face ((t (:foreground "#C82210")))) ;; used to be red then #c82210
+ '(font-lock-constant-face ((t (:foreground "#9876AA"))))
+ '(font-lock-warning-face ((t (:foreground "#C82210"))))
  '(font-lock-operator-face ((t (:foreground "#CC7832"))))
  '(font-lock-end-statement ((t (:foreground "white"))))
- ;; Java-like annotations
+ ;; Java-like annotations 
  '(c-annotation-face ((t (:foreground "#BBB529"))))
  ;; log4j customizations
  '(log4j-font-lock-warn-face ((t (:foreground "Orange"))))
@@ -70,7 +70,7 @@
  '(helm-selection ((t (:background "#424242" :foreground "white"))))
  '(helm-ff-directory ((t (:foreground "#ffffff" :background "DarkSlateGray"))))
  ;; dired customizations
- '(diredp-file-name ((t (:foreground "cyan1")))
+ '(diredp-file-name ((t (:foreground "cyan1"))))
  '(diredp-file-suffix ((t (:foreground "cyan1"))))
  '(diredp-dir-heading ((t (:foreground "white" :background "#2B2B2B" :underline t ))))
  '(diredp-dir-priv ((t (:foreground "#ffffff" :background "#2B2B2B"))))
@@ -89,7 +89,7 @@
  ;; nXML customizations
  ; '<' and '>' characters
  '(nxml-tag-delimiter ((t (:foreground "#E8BF6A"))))
- ; '=' and '"' characters
+ ; '=' and '"' characters 
  '(nxml-attribute-value-delimiter ((t (:foreground "#E8BF6A"))))
  ; tag name
  '(nxml-element-local-name ((t (:foreground "#CC7832"))))
@@ -136,8 +136,8 @@
  '(company-tooltip-annotation ((t (:inherit company-tooltip-common))))
  '(company-scrollbar-fg ((t (:background "#5b5d5e"))))
  '(company-scrollbar-bg ((t (:background "#3b3f40"))))
- '(company-preview ((t (:background "#4a4e4f" :foreground "wheat"))))
- ;;'(company-preview ((t (:inherit region))))
+ ;;'(company-preview ((t (:background "#4a4e4f" :foreground "wheat"))))
+ '(company-preview ((t (:inherit region))))
  '(company-preview-common ((t (:inherit company-preview :foreground "#d17ad6"))))
  '(company-preview-search ((t (:inherit isearch))))
  ;; some custom additions to the Common Lisp code
@@ -152,7 +152,7 @@
  ;; '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
  ;; '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
  ;; '(header-line ((t (:underline (:color foreground-color :style line) :inverse-video nil :foreground "#e7f6da" :background "#303030" :inherit (mode-line)))))
-)
+
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
            load-file-name)
@@ -162,3 +162,4 @@
 
 
 (provide-theme 'idea-darkula)
+;;; idea-darkula-theme.el ends here
